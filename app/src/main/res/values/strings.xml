@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">Clearer</string>
+    <string name="apd">APD Self Help Tool</string>
+
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="have_account">Already have an account?</string>
+
+    <string name="first_problem">First, we need a problem.</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="step1">1. Select an image</string>
+    <string name="step2">2. Pick your action</string>
+
+    <string name="tts">Text to Speech</string>
+    <string name="back">Back</string>
+    <string name="adjectives">Adjectives</string>
+    <string name="nouns">Nouns</string>
+    <string name="pronouns">Pronouns</string>
+    <string name="verbs">Verbs</string>
+    <string name="objects">Objects</string>
+    <string name="Subjects">Subjects</string>
+    <string name="Filters">Filters</string>
+
+    <string name="Done">Done</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- HomeScreen Strings -->
+    <string name="home_title">Home</string>
+    <string name="Camera">Camera</string>
+    <string name="Problems">Problems</string>
+    <string name="Welcome_Back">Hello</string>
+    <string name="earn_points">Earn more points</string>
+    <string name="scan_your_work">Scan your work</string>
+    <string name="home_button_camera">Need help with a homework problem?</string>
+    <string name="home_button_quiz">Want to earn more points?</string>
+    <string name="home_button_analytics">View more</string>
+
+    <!-- Profile Strings -->
+    <string name="profile_title">Profile</string>
+    <string name="points">Points</string>
+    <string name="Log_Out">Log Out</string>
+
+    <!-- Analytics Strings -->
+    <string name="Analytics_Title">Analytics</string>
+    <string name="Strengths">Strengths </string>
+    <string name="userAverage">User Average: </string>
+    <string name="Improvements">Areas of Improvement</string>
+    <string name="Tips">Tips for improvement</string>
+    <string name="External_Resources">External Resources for practice</string>
+    <string name="score">Average score</string>
+    <string name="attempted">Attempted</string>
+
+    <!-- Rendered Text Strings -->
+    <string name="rendered_text">Rendered Text</string>
+    <string name="helper">Helper</string>
+
+    <!-- Floating action button-->
+    <string name="floating_action_button">Highlight keywords in your image text</string>
+
+    <!-- Dummy info -->
+    <string name="example_username">John123</string>
+    <string name="example_email">John123@gmail.com</string>
+    <string name="example_points">100</string>
+    <string name="example_quiz">Quiz 1</string>
+    <string name="example_quiz_description">Identify the nouns</string>
+
+    <!-- Practice Strings -->
+    <string name="practice">Practice</string>
+    <string name="results">Results</string>
+
+    <string name="process">Highlight Keywords</string>
+    <string name="quiz">Practice Identifying</string>
+    <string name="findNouns">Find the nouns</string>
+    <string name="greatWork">Great Work!</string>
+
+    <!-- Problems Strings -->
+    <string name="difficulty">Difficulty</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="or">━━━━━ or ━━━━━</string>
+
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+
+    <string name="self_assessment">Self assessment</string>
+
+    <string name="history">History</string>
+    <string name="view_history">View history</string>
+
+    <string-array name="quiz_types">
+        <item>Noun</item>
+        <item>Verb</item>
+        <item>Adjective</item>
+        <item>Pronoun</item>
+    </string-array>
+
+    <string-array name="history_types">
+        <item>Practice Text</item>
+        <item>Self Assessment</item>
+    </string-array>
+
+    <string-array name="difficulty">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string-array name="sort_options">
+        <item>Newest First</item>
+        <item>Oldest First</item>
+    </string-array>
+
+</resources>

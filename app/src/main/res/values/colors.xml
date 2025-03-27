@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightest_blue">#caf0f8</color>
+    <color name="light_blue">#90e0ef</color>
+    <color name="blue">#00b4d8</color>
+    <color name="dark_blue">#0077b6</color>
+    <color name="darkest_blue">#03045e</color>
+    <color name="black">#FF000000</color>
+    <color name="grey">#737373</color>
+
+    <!--  Floating Action Menu  -->
+
+    <color name="adjectives_dark">#074080</color>
+    <color name="adjectives">#5C96D7</color>
+    <color name="adjectives_light">#AECBEB</color>
+
+    <color name="nouns_dark">#FFA111</color>
+    <color name="nouns">#FFC060</color>
+    <color name="nouns_light">#FFE3B8</color>
+
+    <color name="pronouns_dark">#C54500</color>
+    <color name="pronouns">#FF9760</color>
+    <color name="pronouns_light">#FFD0B8</color>
+
+    <color name="verbs_dark">#00825B</color>
+    <color name="verbs">#51D8AF</color>
+    <color name="verbs_light">#A9EBD7</color>
+
+    <color name="tts">#FCD703</color>
+
+    <color name="background">#F5F5F5</color>
+
+</resources>

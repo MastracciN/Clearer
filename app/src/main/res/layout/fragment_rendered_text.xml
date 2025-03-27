@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.MainActivity">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/helper"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/speakButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/round_border"
+        android:drawableLeft="@drawable/ic_tts"
+        android:paddingLeft="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/renderedText"
+        android:layout_width="343dp"
+        android:layout_height="449dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:lineSpacingExtra="8sp"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/floating_action_button"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        fab:menu_colorNormal="@color/blue"
+        fab:menu_colorPressed="@color/light_blue"
+        fab:menu_colorRipple="@color/blue"
+        fab:menu_labels_colorPressed="#333"
+        fab:menu_labels_colorRipple="#333">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_adjectives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_a"
+            fab:fab_colorNormal="@color/adjectives_light"
+            fab:fab_colorPressed="@color/adjectives_light"
+            fab:fab_colorRipple="@color/adjectives"
+            fab:fab_label="Adjectives"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_nouns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_noun"
+            fab:fab_colorNormal="@color/nouns_light"
+            fab:fab_colorPressed="@color/nouns_light"
+            fab:fab_colorRipple="@color/nouns"
+            fab:fab_label="Nouns"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_pronouns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_p"
+            fab:fab_colorNormal="@color/pronouns_light"
+            fab:fab_colorPressed="@color/pronouns_light"
+            fab:fab_colorRipple="@color/pronouns"
+            fab:fab_label="Pronouns"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_verbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_verb"
+            fab:fab_colorNormal="@color/verbs_light"
+            fab:fab_colorPressed="@color/verbs_light"
+            fab:fab_colorRipple="@color/verbs"
+            fab:fab_label="Verbs"
+            fab:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</androidx.constraintlayout.widget.ConstraintLayout>

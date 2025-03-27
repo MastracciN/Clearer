@@ -1,0 +1,269 @@
+[debug] [2022-12-20T16:43:29.128Z] ----------------------------------------------------------------------
+[debug] [2022-12-20T16:43:29.130Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ganesha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2022-12-20T16:43:29.130Z] CLI Version:   11.19.0
+[debug] [2022-12-20T16:43:29.130Z] Platform:      win32
+[debug] [2022-12-20T16:43:29.130Z] Node Version:  v18.12.1
+[debug] [2022-12-20T16:43:29.131Z] Time:          Tue Dec 20 2022 11:43:29 GMT-0500 (Eastern Standard Time)
+[debug] [2022-12-20T16:43:29.131Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-20T16:43:29.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-20T16:43:29.177Z] > authorizing via signed-in user (deekay1410@gmail.com)
+[debug] [2022-12-20T16:43:29.177Z] [iam] checking project clearer-9425d for permissions ["firebase.projects.get"]
+[debug] [2022-12-20T16:43:29.179Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions [none]
+[debug] [2022-12-20T16:43:29.179Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions x-goog-quota-user=projects/clearer-9425d
+[debug] [2022-12-20T16:43:29.179Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-20T16:43:29.468Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions 200
+[debug] [2022-12-20T16:43:29.469Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-20T16:43:29.472Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-12-20T16:43:29.484Z] defaultcredentials: writing to file C:\Users\Ganesha\AppData\Roaming\firebase\deekay1410_gmail_com_application_default_credentials.json
+[debug] [2022-12-20T16:43:29.485Z] DEBUG: Setting GAC to C:\Users\Ganesha\AppData\Roaming\firebase\deekay1410_gmail_com_application_default_credentials.json
+[debug] [2022-12-20T16:43:29.486Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clearer-9425d/adminSdkConfig [none]
+[debug] [2022-12-20T16:43:29.870Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clearer-9425d/adminSdkConfig 200
+[debug] [2022-12-20T16:43:29.870Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clearer-9425d/adminSdkConfig {"projectId":"clearer-9425d","databaseURL":"https://clearer-9425d-default-rtdb.firebaseio.com","storageBucket":"clearer-9425d.appspot.com","locationId":"us-east1"}
+[debug] [2022-12-20T16:43:29.879Z] [functions] Watching "C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions" for Cloud Functions...
+[debug] [2022-12-20T16:43:29.883Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-20T16:43:30.950Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-20T16:43:30.950Z] Building nodejs source
+[debug] [2022-12-20T16:43:30.951Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-20T16:43:31.118Z] Serving at port 9005
+
+[debug] [2022-12-20T16:43:31.170Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloWorld"},"hiWorld":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"hiWorld"},"getName":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"getName"},"calculateAverage":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"calculateAverage"},"getAverage":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"getAverage"},"addMessage":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"addMessage"},"getStrengths":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"getStrengths"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-20T16:43:31.176Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-12-20T16:43:31.183Z] [functions] Loaded functions definitions from source: helloWorld, hiWorld, getName, calculateAverage, getAverage, addMessage, getStrengths.
+[debug] [2022-12-20T16:43:31.184Z] [functions[us-central1-helloWorld]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/helloWorld).
+[debug] [2022-12-20T16:43:31.184Z] [functions[us-central1-hiWorld]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/hiWorld).
+[debug] [2022-12-20T16:43:31.184Z] [functions[us-central1-getName]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/getName).
+[debug] [2022-12-20T16:43:31.184Z] [functions[us-central1-calculateAverage]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/calculateAverage).
+[debug] [2022-12-20T16:43:31.184Z] [functions[us-central1-getAverage]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/getAverage).
+[debug] [2022-12-20T16:43:31.184Z] [functions[us-central1-addMessage]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/addMessage).
+[debug] [2022-12-20T16:43:31.184Z] [functions[us-central1-getStrengths]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/getStrengths).
+[info] i  functions: Loaded functions: helloWorld, hiWorld, getName, calculateAverage, getAverage, addMessage, getStrengths 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc 
+[debug] [2022-12-20T16:43:32.820Z] [work-queue] {"queuedWork":["/clearer-9425d/us-central1/getStrengths-2022-12-20T16:43:32.820Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2022-12-20T16:43:32.820Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clearer-9425d/us-central1/getStrengths-2022-12-20T16:43:32.820Z"],"workRunningCount":1}
+[debug] [2022-12-20T16:43:32.821Z] Accepted request POST /clearer-9425d/us-central1/getStrengths --> us-central1-getStrengths
+[debug] [2022-12-20T16:43:32.824Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2022-12-20T16:43:32.824Z] DEBUG: [functions] Got req.url=/clearer-9425d/us-central1/getStrengths, mapping to path=/
+[debug] [2022-12-20T16:43:32.829Z] DEBUG: [worker-pool] addWorker(us-central1-getStrengths)
+[debug] [2022-12-20T16:43:32.829Z] DEBUG: [worker-pool] Adding worker with key us-central1-getStrengths, total=1
+[debug] [2022-12-20T16:43:33.733Z] DEBUG: [runtime-status] [18416] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-12-20T16:43:33.735Z] DEBUG: [runtime-status] [18416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:43:33.735Z] DEBUG: [runtime-status] [18416] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2022-12-20T16:43:33.736Z] DEBUG: [runtime-status] [18416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:43:33.771Z] DEBUG: [runtime-status] [18416] Checked functions.config() {"config":{}}
+[debug] [2022-12-20T16:43:33.771Z] DEBUG: [runtime-status] [18416] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2022-12-20T16:43:33.772Z] DEBUG: [runtime-status] [18416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:43:33.773Z] DEBUG: [runtime-status] [18416] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-12-20T16:43:33.773Z] DEBUG: [runtime-status] [18416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:43:33.773Z] DEBUG: [runtime-status] [18416] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2022-12-20T16:43:33.775Z] DEBUG: [runtime-status] [18416] initializeApp(DEFAULT) {"storageBucket":"clearer-9425d.appspot.com","databaseURL":"https://clearer-9425d-default-rtdb.firebaseio.com","projectId":"clearer-9425d"}
+[debug] [2022-12-20T16:43:33.780Z] DEBUG: [runtime-status] [18416] Functions runtime initialized. {"cwd":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions","node_version":"18.12.1"}
+[debug] [2022-12-20T16:43:33.780Z] DEBUG: [runtime-status] [18416] Listening to port: \\?\pipe\fire_emu_fc9b5815b2819582
+[debug] [2022-12-20T16:43:33.818Z] DEBUG: [worker-us-central1-getStrengths-b751869b-d01e-4f2b-8cd6-be093e4e6f69]: IDLE
+[debug] [2022-12-20T16:43:33.818Z] DEBUG: [worker-pool] submitRequest(triggerId=us-central1-getStrengths)
+[debug] [2022-12-20T16:43:33.818Z] DEBUG: [worker-us-central1-getStrengths-b751869b-d01e-4f2b-8cd6-be093e4e6f69]: BUSY
+[debug] [2022-12-20T16:43:33.828Z] [functions] Beginning execution of "getStrengths"
+[info] >  {"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"INFO","message":"Callable request verification passed"} {"user":{"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"INFO","message":"Callable request verification passed"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"verifications\":{\"app\":\"MISSING\",\"auth\":\"MISSING\"},\"logging.googleapis.com/labels\":{\"firebase-log-type\":\"callable-request-verification\"},\"severity\":\"INFO\",\"message\":\"Callable request verification passed\"}"}}
+[debug] [2022-12-20T16:43:33.830Z] DEBUG: [runtime-status] [18416] No callable functions auth found
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2022-12-20T16:43:33.852Z] DEBUG: [worker-us-central1-getStrengths-b751869b-d01e-4f2b-8cd6-be093e4e6f69]: IDLE
+[debug] [2022-12-20T16:43:33.852Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] >  C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\node_modules\@google-cloud\firestore\build\src\path.js:446 {"user":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\path.js:446\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\path.js:446\r"}}
+[info] >          throw new Error(`${validate_1.invalidArgumentMessage(arg, 'resource path')} Path must be a non-empty string.`); {"user":"        throw new Error(`${validate_1.invalidArgumentMessage(arg, 'resource path')} Path must be a non-empty string.`);\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m         throw new Error(`${validate_1.invalidArgumentMessage(arg, 'resource path')} Path must be a non-empty string.`);\r"}}
+[info] >                ^ {"user":"              ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m               ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Error: Value for argument "documentPath" is not a valid resource path. Path must be a non-empty string. {"user":"Error: Value for argument \"documentPath\" is not a valid resource path. Path must be a non-empty string.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m Error: Value for argument \"documentPath\" is not a valid resource path. Path must be a non-empty string.\r"}}
+[info] >      at Object.validateResourcePath (C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\node_modules\@google-cloud\firestore\build\src\path.js:446:15) {"user":"    at Object.validateResourcePath (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\path.js:446:15)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Object.validateResourcePath (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\path.js:446:15)\r"}}
+[info] >      at CollectionReference.doc (C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\node_modules\@google-cloud\firestore\build\src\reference.js:2061:20) {"user":"    at CollectionReference.doc (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\reference.js:2061:20)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at CollectionReference.doc (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\reference.js:2061:20)\r"}}
+[info] >      at calculateStrengths (C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\index.js:169:8) {"user":"    at calculateStrengths (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\index.js:169:8)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at calculateStrengths (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\index.js:169:8)\r"}}
+[info] >      at C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\index.js:161:3 {"user":"    at C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\index.js:161:3\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\index.js:161:3\r"}}
+[info] >      at newHandler (C:\Users\Ganesha\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:317:16) {"user":"    at newHandler (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:317:16)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at newHandler (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:317:16)\r"}}
+[info] >      at fixedLen (C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\node_modules\firebase-functions\lib\providers\https.js:72:41) {"user":"    at fixedLen (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\providers\\https.js:72:41)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at fixedLen (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\providers\\https.js:72:41)\r"}}
+[info] >      at C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\node_modules\firebase-functions\lib\common\providers\https.js:407:32 {"user":"    at C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\common\\providers\\https.js:407:32\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\common\\providers\\https.js:407:32\r"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\r"}}
+[info] >      at async runFunction (C:\Users\Ganesha\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:504:9) {"user":"    at async runFunction (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:504:9)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async runFunction (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:504:9)\r"}}
+[info] >      at async runHTTPS (C:\Users\Ganesha\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:529:5) {"user":"    at async runHTTPS (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:529:5)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async runHTTPS (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:529:5)\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.12.1 {"user":"Node.js v18.12.1\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.12.1\r"}}
+[debug] [2022-12-20T16:43:33.861Z] DEBUG: [worker-us-central1-getStrengths-b751869b-d01e-4f2b-8cd6-be093e4e6f69]: exited
+[debug] [2022-12-20T16:43:33.861Z] DEBUG: [worker-us-central1-getStrengths-b751869b-d01e-4f2b-8cd6-be093e4e6f69]: FINISHED
+[debug] [2022-12-20T16:44:34.694Z] ----------------------------------------------------------------------
+[debug] [2022-12-20T16:44:34.695Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ganesha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2022-12-20T16:44:34.695Z] CLI Version:   11.19.0
+[debug] [2022-12-20T16:44:34.696Z] Platform:      win32
+[debug] [2022-12-20T16:44:34.696Z] Node Version:  v18.12.1
+[debug] [2022-12-20T16:44:34.696Z] Time:          Tue Dec 20 2022 11:44:34 GMT-0500 (Eastern Standard Time)
+[debug] [2022-12-20T16:44:34.696Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-20T16:44:34.744Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-20T16:44:34.744Z] > authorizing via signed-in user (deekay1410@gmail.com)
+[debug] [2022-12-20T16:44:34.744Z] [iam] checking project clearer-9425d for permissions ["firebase.projects.get"]
+[debug] [2022-12-20T16:44:34.746Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions [none]
+[debug] [2022-12-20T16:44:34.746Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions x-goog-quota-user=projects/clearer-9425d
+[debug] [2022-12-20T16:44:34.746Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-20T16:44:34.955Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions 200
+[debug] [2022-12-20T16:44:34.955Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-20T16:44:34.959Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-12-20T16:44:34.971Z] defaultcredentials: writing to file C:\Users\Ganesha\AppData\Roaming\firebase\deekay1410_gmail_com_application_default_credentials.json
+[debug] [2022-12-20T16:44:34.972Z] DEBUG: Setting GAC to C:\Users\Ganesha\AppData\Roaming\firebase\deekay1410_gmail_com_application_default_credentials.json
+[debug] [2022-12-20T16:44:34.972Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clearer-9425d/adminSdkConfig [none]
+[debug] [2022-12-20T16:44:35.261Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clearer-9425d/adminSdkConfig 200
+[debug] [2022-12-20T16:44:35.261Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clearer-9425d/adminSdkConfig {"projectId":"clearer-9425d","databaseURL":"https://clearer-9425d-default-rtdb.firebaseio.com","storageBucket":"clearer-9425d.appspot.com","locationId":"us-east1"}
+[debug] [2022-12-20T16:44:35.269Z] [functions] Watching "C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions" for Cloud Functions...
+[debug] [2022-12-20T16:44:35.272Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-20T16:44:36.278Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-20T16:44:36.278Z] Building nodejs source
+[debug] [2022-12-20T16:44:36.279Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-20T16:44:36.447Z] Serving at port 9005
+
+[debug] [2022-12-20T16:44:36.499Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloWorld"},"hiWorld":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"hiWorld"},"getName":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"getName"},"calculateAverage":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"calculateAverage"},"getAverage":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"getAverage"},"addMessage":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"addMessage"},"getStrengths":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"getStrengths"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-20T16:44:36.505Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-12-20T16:44:36.513Z] [functions] Loaded functions definitions from source: helloWorld, hiWorld, getName, calculateAverage, getAverage, addMessage, getStrengths.
+[debug] [2022-12-20T16:44:36.513Z] [functions[us-central1-helloWorld]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/helloWorld).
+[debug] [2022-12-20T16:44:36.513Z] [functions[us-central1-hiWorld]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/hiWorld).
+[debug] [2022-12-20T16:44:36.514Z] [functions[us-central1-getName]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/getName).
+[debug] [2022-12-20T16:44:36.514Z] [functions[us-central1-calculateAverage]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/calculateAverage).
+[debug] [2022-12-20T16:44:36.514Z] [functions[us-central1-getAverage]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/getAverage).
+[debug] [2022-12-20T16:44:36.514Z] [functions[us-central1-addMessage]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/addMessage).
+[debug] [2022-12-20T16:44:36.514Z] [functions[us-central1-getStrengths]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/getStrengths).
+[info] i  functions: Loaded functions: helloWorld, hiWorld, getName, calculateAverage, getAverage, addMessage, getStrengths 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc 
+[debug] [2022-12-20T16:44:38.893Z] [work-queue] {"queuedWork":["/clearer-9425d/us-central1/getAverage-2022-12-20T16:44:38.893Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2022-12-20T16:44:38.893Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clearer-9425d/us-central1/getAverage-2022-12-20T16:44:38.893Z"],"workRunningCount":1}
+[debug] [2022-12-20T16:44:38.893Z] Accepted request POST /clearer-9425d/us-central1/getAverage --> us-central1-getAverage
+[debug] [2022-12-20T16:44:38.896Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2022-12-20T16:44:38.896Z] DEBUG: [functions] Got req.url=/clearer-9425d/us-central1/getAverage, mapping to path=/
+[debug] [2022-12-20T16:44:38.901Z] DEBUG: [worker-pool] addWorker(us-central1-getAverage)
+[debug] [2022-12-20T16:44:38.902Z] DEBUG: [worker-pool] Adding worker with key us-central1-getAverage, total=1
+[debug] [2022-12-20T16:44:39.812Z] DEBUG: [runtime-status] [9348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-12-20T16:44:39.814Z] DEBUG: [runtime-status] [9348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:44:39.815Z] DEBUG: [runtime-status] [9348] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2022-12-20T16:44:39.815Z] DEBUG: [runtime-status] [9348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:44:39.852Z] DEBUG: [runtime-status] [9348] Checked functions.config() {"config":{}}
+[debug] [2022-12-20T16:44:39.852Z] DEBUG: [runtime-status] [9348] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2022-12-20T16:44:39.853Z] DEBUG: [runtime-status] [9348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:44:39.854Z] DEBUG: [runtime-status] [9348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-12-20T16:44:39.855Z] DEBUG: [runtime-status] [9348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:44:39.855Z] DEBUG: [runtime-status] [9348] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2022-12-20T16:44:39.856Z] DEBUG: [runtime-status] [9348] initializeApp(DEFAULT) {"storageBucket":"clearer-9425d.appspot.com","databaseURL":"https://clearer-9425d-default-rtdb.firebaseio.com","projectId":"clearer-9425d"}
+[debug] [2022-12-20T16:44:39.861Z] DEBUG: [runtime-status] [9348] Functions runtime initialized. {"cwd":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions","node_version":"18.12.1"}
+[debug] [2022-12-20T16:44:39.861Z] DEBUG: [runtime-status] [9348] Listening to port: \\?\pipe\fire_emu_732d609af2df9e6a
+[debug] [2022-12-20T16:44:39.905Z] DEBUG: [worker-us-central1-getAverage-04ff727f-e7af-44c1-a08c-a7fb97280088]: IDLE
+[debug] [2022-12-20T16:44:39.905Z] DEBUG: [worker-pool] submitRequest(triggerId=us-central1-getAverage)
+[debug] [2022-12-20T16:44:39.905Z] DEBUG: [worker-us-central1-getAverage-04ff727f-e7af-44c1-a08c-a7fb97280088]: BUSY
+[debug] [2022-12-20T16:44:39.914Z] [functions] Beginning execution of "getAverage"
+[info] >  {"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"INFO","message":"Callable request verification passed"} {"user":{"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"INFO","message":"Callable request verification passed"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getAverage"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"verifications\":{\"app\":\"MISSING\",\"auth\":\"MISSING\"},\"logging.googleapis.com/labels\":{\"firebase-log-type\":\"callable-request-verification\"},\"severity\":\"INFO\",\"message\":\"Callable request verification passed\"}"}}
+[debug] [2022-12-20T16:44:39.916Z] DEBUG: [runtime-status] [9348] No callable functions auth found
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getAverage"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[warn] !  Google API requested!
+   - URL: "https://oauth2.googleapis.com/token"
+   - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getAverage"},"extension":{},"message":"Google API requested!\n   - URL: \"https://oauth2.googleapis.com/token\"\n   - Be careful, this may be a production service."}}
+[info] >  pronouns list: 100 {"user":"pronouns list: 100","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getAverage"},"extension":{},"message":"\u001b[90m> \u001b[39m pronouns list: 100"}}
+[debug] [2022-12-20T16:44:40.907Z] DEBUG: [worker-us-central1-getAverage-04ff727f-e7af-44c1-a08c-a7fb97280088]: IDLE
+[debug] [2022-12-20T16:44:40.907Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2022-12-20T16:44:40.907Z] [functions] Finished "getAverage" in 991.8439ms
+[debug] [2022-12-20T16:44:46.398Z] [work-queue] {"queuedWork":["/clearer-9425d/us-central1/getStrengths-2022-12-20T16:44:46.398Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2022-12-20T16:44:46.398Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clearer-9425d/us-central1/getStrengths-2022-12-20T16:44:46.398Z"],"workRunningCount":1}
+[debug] [2022-12-20T16:44:46.398Z] Accepted request POST /clearer-9425d/us-central1/getStrengths --> us-central1-getStrengths
+[debug] [2022-12-20T16:44:46.401Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2022-12-20T16:44:46.401Z] DEBUG: [functions] Got req.url=/clearer-9425d/us-central1/getStrengths, mapping to path=/
+[debug] [2022-12-20T16:44:46.405Z] DEBUG: [worker-pool] addWorker(us-central1-getStrengths)
+[debug] [2022-12-20T16:44:46.405Z] DEBUG: [worker-pool] Adding worker with key us-central1-getStrengths, total=1
+[debug] [2022-12-20T16:44:47.306Z] DEBUG: [runtime-status] [5896] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-12-20T16:44:47.308Z] DEBUG: [runtime-status] [5896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:44:47.309Z] DEBUG: [runtime-status] [5896] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2022-12-20T16:44:47.309Z] DEBUG: [runtime-status] [5896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:44:47.344Z] DEBUG: [runtime-status] [5896] Checked functions.config() {"config":{}}
+[debug] [2022-12-20T16:44:47.345Z] DEBUG: [runtime-status] [5896] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2022-12-20T16:44:47.345Z] DEBUG: [runtime-status] [5896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:44:47.346Z] DEBUG: [runtime-status] [5896] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-12-20T16:44:47.347Z] DEBUG: [runtime-status] [5896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-20T16:44:47.347Z] DEBUG: [runtime-status] [5896] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2022-12-20T16:44:47.349Z] DEBUG: [runtime-status] [5896] initializeApp(DEFAULT) {"storageBucket":"clearer-9425d.appspot.com","databaseURL":"https://clearer-9425d-default-rtdb.firebaseio.com","projectId":"clearer-9425d"}
+[debug] [2022-12-20T16:44:47.354Z] DEBUG: [runtime-status] [5896] Functions runtime initialized. {"cwd":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions","node_version":"18.12.1"}
+[debug] [2022-12-20T16:44:47.354Z] DEBUG: [runtime-status] [5896] Listening to port: \\?\pipe\fire_emu_c38d6f1e7984e112
+[debug] [2022-12-20T16:44:47.396Z] DEBUG: [worker-us-central1-getStrengths-0946557b-9262-4bf9-8b13-dc18ed51cfb4]: IDLE
+[debug] [2022-12-20T16:44:47.396Z] DEBUG: [worker-pool] submitRequest(triggerId=us-central1-getStrengths)
+[debug] [2022-12-20T16:44:47.396Z] DEBUG: [worker-us-central1-getStrengths-0946557b-9262-4bf9-8b13-dc18ed51cfb4]: BUSY
+[debug] [2022-12-20T16:44:47.406Z] [functions] Beginning execution of "getStrengths"
+[info] >  {"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"INFO","message":"Callable request verification passed"} {"user":{"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"INFO","message":"Callable request verification passed"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"verifications\":{\"app\":\"MISSING\",\"auth\":\"MISSING\"},\"logging.googleapis.com/labels\":{\"firebase-log-type\":\"callable-request-verification\"},\"severity\":\"INFO\",\"message\":\"Callable request verification passed\"}"}}
+[debug] [2022-12-20T16:44:47.408Z] DEBUG: [runtime-status] [5896] No callable functions auth found
+[debug] [2022-12-20T16:44:47.430Z] DEBUG: [worker-us-central1-getStrengths-0946557b-9262-4bf9-8b13-dc18ed51cfb4]: IDLE
+[debug] [2022-12-20T16:44:47.430Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] >  C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\node_modules\@google-cloud\firestore\build\src\path.js:446 {"user":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\path.js:446\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\path.js:446\r"}}
+[info] >          throw new Error(`${validate_1.invalidArgumentMessage(arg, 'resource path')} Path must be a non-empty string.`); {"user":"        throw new Error(`${validate_1.invalidArgumentMessage(arg, 'resource path')} Path must be a non-empty string.`);\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m         throw new Error(`${validate_1.invalidArgumentMessage(arg, 'resource path')} Path must be a non-empty string.`);\r"}}
+[info] >                ^ {"user":"              ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m               ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Error: Value for argument "documentPath" is not a valid resource path. Path must be a non-empty string. {"user":"Error: Value for argument \"documentPath\" is not a valid resource path. Path must be a non-empty string.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m Error: Value for argument \"documentPath\" is not a valid resource path. Path must be a non-empty string.\r"}}
+[info] >      at Object.validateResourcePath (C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\node_modules\@google-cloud\firestore\build\src\path.js:446:15) {"user":"    at Object.validateResourcePath (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\path.js:446:15)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Object.validateResourcePath (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\path.js:446:15)\r"}}
+[info] >      at CollectionReference.doc (C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\node_modules\@google-cloud\firestore\build\src\reference.js:2061:20) {"user":"    at CollectionReference.doc (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\reference.js:2061:20)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at CollectionReference.doc (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\@google-cloud\\firestore\\build\\src\\reference.js:2061:20)\r"}}
+[info] >      at calculateStrengths (C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\index.js:169:8) {"user":"    at calculateStrengths (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\index.js:169:8)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at calculateStrengths (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\index.js:169:8)\r"}}
+[info] >      at C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\index.js:161:3 {"user":"    at C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\index.js:161:3\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\index.js:161:3\r"}}
+[info] >      at newHandler (C:\Users\Ganesha\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:317:16) {"user":"    at newHandler (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:317:16)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at newHandler (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:317:16)\r"}}
+[info] >      at fixedLen (C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\node_modules\firebase-functions\lib\providers\https.js:72:41) {"user":"    at fixedLen (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\providers\\https.js:72:41)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at fixedLen (C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\providers\\https.js:72:41)\r"}}
+[info] >      at C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions\node_modules\firebase-functions\lib\common\providers\https.js:407:32 {"user":"    at C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\common\\providers\\https.js:407:32\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\common\\providers\\https.js:407:32\r"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\r"}}
+[info] >      at async runFunction (C:\Users\Ganesha\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:504:9) {"user":"    at async runFunction (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:504:9)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async runFunction (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:504:9)\r"}}
+[info] >      at async runHTTPS (C:\Users\Ganesha\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:529:5) {"user":"    at async runHTTPS (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:529:5)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async runHTTPS (C:\\Users\\Ganesha\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:529:5)\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.12.1 {"user":"Node.js v18.12.1\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getStrengths"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.12.1\r"}}
+[debug] [2022-12-20T16:44:47.440Z] DEBUG: [worker-us-central1-getStrengths-0946557b-9262-4bf9-8b13-dc18ed51cfb4]: exited
+[debug] [2022-12-20T16:44:47.440Z] DEBUG: [worker-us-central1-getStrengths-0946557b-9262-4bf9-8b13-dc18ed51cfb4]: FINISHED

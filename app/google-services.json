@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "80113005143",
+    "project_id": "clearer-9425d",
+    "storage_bucket": "clearer-9425d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80113005143:android:d3f75ccc5864269e632912",
+        "android_client_info": {
+          "package_name": "com.example.clearer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80113005143-4tkraatkfm4q39v1s51nufjq5d9qgaal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANs46qjS1bQBg7vj61qjcOvYE-YEV9Qoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80113005143-4tkraatkfm4q39v1s51nufjq5d9qgaal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

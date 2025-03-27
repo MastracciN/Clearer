@@ -1,0 +1,102 @@
+[debug] [2022-12-24T22:56:20.308Z] ----------------------------------------------------------------------
+[debug] [2022-12-24T22:56:20.309Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ganesha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2022-12-24T22:56:20.310Z] CLI Version:   11.19.0
+[debug] [2022-12-24T22:56:20.310Z] Platform:      win32
+[debug] [2022-12-24T22:56:20.310Z] Node Version:  v18.12.1
+[debug] [2022-12-24T22:56:20.311Z] Time:          Sat Dec 24 2022 17:56:20 GMT-0500 (Eastern Standard Time)
+[debug] [2022-12-24T22:56:20.311Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-24T22:56:20.359Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-24T22:56:20.359Z] > authorizing via signed-in user (deekay1410@gmail.com)
+[debug] [2022-12-24T22:56:20.360Z] [iam] checking project clearer-9425d for permissions ["firebase.projects.get"]
+[debug] [2022-12-24T22:56:20.361Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions [none]
+[debug] [2022-12-24T22:56:20.361Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions x-goog-quota-user=projects/clearer-9425d
+[debug] [2022-12-24T22:56:20.361Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-24T22:56:20.677Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions 200
+[debug] [2022-12-24T22:56:20.677Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clearer-9425d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-24T22:56:20.681Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-12-24T22:56:20.693Z] defaultcredentials: writing to file C:\Users\Ganesha\AppData\Roaming\firebase\deekay1410_gmail_com_application_default_credentials.json
+[debug] [2022-12-24T22:56:20.694Z] DEBUG: Setting GAC to C:\Users\Ganesha\AppData\Roaming\firebase\deekay1410_gmail_com_application_default_credentials.json
+[debug] [2022-12-24T22:56:20.694Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clearer-9425d/adminSdkConfig [none]
+[debug] [2022-12-24T22:56:21.019Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clearer-9425d/adminSdkConfig 200
+[debug] [2022-12-24T22:56:21.019Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clearer-9425d/adminSdkConfig {"projectId":"clearer-9425d","databaseURL":"https://clearer-9425d-default-rtdb.firebaseio.com","storageBucket":"clearer-9425d.appspot.com","locationId":"us-east1"}
+[debug] [2022-12-24T22:56:21.028Z] [functions] Watching "C:\Users\Ganesha\Desktop\Sheridan 4th Year\Capstone\Clearer_Project\functions" for Cloud Functions...
+[debug] [2022-12-24T22:56:21.031Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-24T22:56:22.026Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-24T22:56:22.026Z] Building nodejs source
+[debug] [2022-12-24T22:56:22.028Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-24T22:56:22.198Z] Serving at port 9005
+
+[debug] [2022-12-24T22:56:22.252Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloWorld"},"hiWorld":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"hiWorld"},"apiRequest":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"apiRequest"},"getName":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"getName"},"calculateAverage":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"calculateAverage"},"getAverage":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"getAverage"},"addMessage":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"addMessage"},"getStrengths":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"getStrengths"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-24T22:56:22.258Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-12-24T22:56:22.266Z] [functions] Loaded functions definitions from source: helloWorld, hiWorld, apiRequest, getName, calculateAverage, getAverage, addMessage, getStrengths.
+[debug] [2022-12-24T22:56:22.267Z] [functions[us-central1-helloWorld]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/helloWorld).
+[debug] [2022-12-24T22:56:22.267Z] [functions[us-central1-hiWorld]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/hiWorld).
+[debug] [2022-12-24T22:56:22.267Z] [functions[us-central1-apiRequest]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/apiRequest).
+[debug] [2022-12-24T22:56:22.267Z] [functions[us-central1-getName]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/getName).
+[debug] [2022-12-24T22:56:22.267Z] [functions[us-central1-calculateAverage]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/calculateAverage).
+[debug] [2022-12-24T22:56:22.267Z] [functions[us-central1-getAverage]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/getAverage).
+[debug] [2022-12-24T22:56:22.267Z] [functions[us-central1-addMessage]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/addMessage).
+[debug] [2022-12-24T22:56:22.267Z] [functions[us-central1-getStrengths]] http function initialized (http://127.0.0.1:5000/clearer-9425d/us-central1/getStrengths).
+[info] i  functions: Loaded functions: helloWorld, hiWorld, apiRequest, getName, calculateAverage, getAverage, addMessage, getStrengths 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc 
+[debug] [2022-12-24T22:56:25.888Z] [work-queue] {"queuedWork":["/clearer-9425d/us-central1/apiRequest-2022-12-24T22:56:25.888Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2022-12-24T22:56:25.888Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clearer-9425d/us-central1/apiRequest-2022-12-24T22:56:25.888Z"],"workRunningCount":1}
+[debug] [2022-12-24T22:56:25.889Z] Accepted request POST /clearer-9425d/us-central1/apiRequest --> us-central1-apiRequest
+[debug] [2022-12-24T22:56:25.892Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2022-12-24T22:56:25.892Z] DEBUG: [functions] Got req.url=/clearer-9425d/us-central1/apiRequest, mapping to path=/
+[debug] [2022-12-24T22:56:25.897Z] DEBUG: [worker-pool] addWorker(us-central1-apiRequest)
+[debug] [2022-12-24T22:56:25.897Z] DEBUG: [worker-pool] Adding worker with key us-central1-apiRequest, total=1
+[debug] [2022-12-24T22:56:26.825Z] DEBUG: [runtime-status] [64216] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-12-24T22:56:26.827Z] DEBUG: [runtime-status] [64216] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-24T22:56:26.827Z] DEBUG: [runtime-status] [64216] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2022-12-24T22:56:26.828Z] DEBUG: [runtime-status] [64216] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-24T22:56:26.864Z] DEBUG: [runtime-status] [64216] Checked functions.config() {"config":{}}
+[debug] [2022-12-24T22:56:26.864Z] DEBUG: [runtime-status] [64216] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2022-12-24T22:56:26.865Z] DEBUG: [runtime-status] [64216] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-24T22:56:26.866Z] DEBUG: [runtime-status] [64216] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-12-24T22:56:26.866Z] DEBUG: [runtime-status] [64216] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-12-24T22:56:26.867Z] DEBUG: [runtime-status] [64216] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2022-12-24T22:56:26.868Z] DEBUG: [runtime-status] [64216] initializeApp(DEFAULT) {"storageBucket":"clearer-9425d.appspot.com","databaseURL":"https://clearer-9425d-default-rtdb.firebaseio.com","projectId":"clearer-9425d"}
+[debug] [2022-12-24T22:56:26.873Z] DEBUG: [runtime-status] [64216] Functions runtime initialized. {"cwd":"C:\\Users\\Ganesha\\Desktop\\Sheridan 4th Year\\Capstone\\Clearer_Project\\functions","node_version":"18.12.1"}
+[debug] [2022-12-24T22:56:26.873Z] DEBUG: [runtime-status] [64216] Listening to port: \\?\pipe\fire_emu_49211915df4413e0
+[debug] [2022-12-24T22:56:26.887Z] DEBUG: [worker-us-central1-apiRequest-6f876893-f3b8-443d-88c0-d59fe4cdc5a2]: IDLE
+[debug] [2022-12-24T22:56:26.887Z] DEBUG: [worker-pool] submitRequest(triggerId=us-central1-apiRequest)
+[debug] [2022-12-24T22:56:26.887Z] DEBUG: [worker-us-central1-apiRequest-6f876893-f3b8-443d-88c0-d59fe4cdc5a2]: BUSY
+[debug] [2022-12-24T22:56:26.896Z] [functions] Beginning execution of "apiRequest"
+[info] >  {"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"INFO","message":"Callable request verification passed"} {"user":{"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"INFO","message":"Callable request verification passed"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-apiRequest"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"verifications\":{\"app\":\"MISSING\",\"auth\":\"MISSING\"},\"logging.googleapis.com/labels\":{\"firebase-log-type\":\"callable-request-verification\"},\"severity\":\"INFO\",\"message\":\"Callable request verification passed\"}"}}
+[debug] [2022-12-24T22:56:26.898Z] DEBUG: [runtime-status] [64216] No callable functions auth found
+[info] >  (node:64216) ExperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time {"user":"(node:64216) ExperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-apiRequest"},"extension":{},"message":"\u001b[90m> \u001b[39m (node:64216) ExperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time"}}
+[info] >  (Use `node --trace-warnings ...` to show where the warning was created) {"user":"(Use `node --trace-warnings ...` to show where the warning was created)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-apiRequest"},"extension":{},"message":"\u001b[90m> \u001b[39m (Use `node --trace-warnings ...` to show where the warning was created)"}}
+[debug] [2022-12-24T22:56:27.094Z] DEBUG: [worker-us-central1-apiRequest-6f876893-f3b8-443d-88c0-d59fe4cdc5a2]: IDLE
+[debug] [2022-12-24T22:56:27.094Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2022-12-24T22:56:27.103Z] [functions] Finished "apiRequest" in 198.1861ms

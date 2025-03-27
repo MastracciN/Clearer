@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.clearer.fragments.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_fragment_home_to_fragment_camera"
+            app:destination="@id/fragment_camera" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_camera"
+        android:name="com.example.clearer.fragments.CameraFragment"
+        android:label="CameraFragment" >
+        <action
+            android:id="@+id/action_fragment_camera_to_fragment_rendered_text2"
+            app:destination="@id/fragment_rendered_text" />
+        <action
+            android:id="@+id/action_fragment_camera_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_analytics"
+        android:name="com.example.clearer.fragments.AnalyticsFragment"
+        android:label="fragment_analytics"
+        tools:layout="@layout/fragment_analytics" />
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.example.clearer.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/fragment_rendered_text"
+        android:name="com.example.clearer.fragments.RenderedTextFragment"
+        android:label="RenderedTextFragment" >
+        <argument
+            android:name="renderedText"
+            app:argType="string"
+            android:defaultValue="text" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_practice"
+        android:name="com.example.clearer.fragments.PracticeFragment"
+        android:label="PracticeFragment" >
+        <action
+            android:id="@+id/action_fragment_practice_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.clearer.fragments.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <argument
+            android:name="renderedText"
+            app:argType="string"
+            android:defaultValue="text" />
+        <action
+            android:id="@+id/action_quizFragment_to_fragment_camera"
+            app:destination="@id/fragment_camera" />
+        <argument
+            android:name="quizType"
+            app:argType="string"
+            android:defaultValue="noun" />
+        <argument
+            android:name="documentId"
+            app:argType="string"
+            android:defaultValue="none" />
+        <action
+            android:id="@+id/action_quizFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+        <argument
+            android:name="problem"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.clearer.fragments.ResultsFragment"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results" >
+        <argument
+            android:name="points"
+            app:argType="long" />
+        <argument
+            android:name="results"
+            app:argType="string"
+            android:defaultValue="Continue" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.clearer.fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_fragment_rendered_text"
+            app:destination="@id/fragment_rendered_text" />
+    </fragment>
+
+
+</navigation>
